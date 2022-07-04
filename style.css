@@ -10,11 +10,12 @@ button{
 body{
     display: grid;
     grid-template-columns: 300px 600px;
+    grid-template-rows: 200px auto;
 }
 
 /* Dashboard */
 div#sidebar-dashboard{
-    background-color: rgb(69, 144, 206);
+    background-color: rgb(33, 75, 95);
     display: grid;
     width: 300px;
     height: 821px;
@@ -23,13 +24,13 @@ div#sidebar-dashboard{
 
 div#sidebar-dashboard h2{
     color: #fff;
-    margin: 10px;
+    padding-top: 30px;
 }
 
 div#sidebar-dashboard button{
     background-color: inherit;
     color: #fff;
-    margin: 5px;
+    margin: 2px;
 }
 
 /* Header */
@@ -93,4 +94,76 @@ div#buttons button{
 /* Profile Pic */
 img.profile-pic{
     border-radius: 50%;
+}
+
+/* Main Content */
+div#main-content{
+    display: flex;
+    width: 1121px;
+    padding: 10px;
+    background-color: rgb(231,229,228);
+    flex-wrap: wrap;
+}
+
+div#left-side{
+    display: grid;
+    grid-template-columns: 350px 300px;
+}
+
+h3#project-h3{
+    width: 100%;
+    margin: 10px 5px;
+}
+
+div.project-container{
+    width: 300px;
+    border: 1px dotted black;
+    background-color: #fff;
+    border-left: 3px solid orange;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+}
+
+div.project-container p{
+    margin: 10px auto;
+}
+
+button.github,
+button.github img,
+button.view,
+button.view img{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 20px;
+    background-color: #fff;
+}
+
+button.view{
+    margin-left: 220px;
+}
+
+/* Announcements & Trending*/
+div.notification-messages{
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
+div.notification-messages h4{
+    margin-bottom: 10px;
+}
+
+div#right-side{
+    width: 400px;
+    display: grid;
+    margin-left: auto;
+}
+
+div#announcements,
+div#trending{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
 }
